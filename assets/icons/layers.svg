@@ -1,0 +1,19 @@
+<!-- Icon from Its Hover (itshover.com), Apache-2.0. Converted to static SVG. -->
+<svg
+        width="24"
+        height="24"
+        viewBox="0 0 120 120"
+        fill="none"
+        stroke-width="10.0"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="44"
+          y="22"
+          width="56"
+          height="36"
+          rx="10"
+          fill="#3B82F6"
+        />
+        <rect x="20" y="62" width="64" height="40" rx="12" fill="#3B82F6" />
+      </svg>
