@@ -25,6 +25,12 @@ const CONFIG = {
   maxLanguages: 6,
   // Bahasa yang tidak ingin ditampilkan, contoh: ["HTML", "CSS", "Dockerfile"]
   excludeLanguages: [],
+  // Ikut hitung bahasa dari repo organisasi tempat Anda menjadi anggota (mis. HNS IT Center)
+  // dan repo yang Anda ikut kerjakan sebagai collaborator.
+  // Repo private hanya terbaca jika secret STATS_TOKEN diisi (classic PAT dengan scope "repo" dan "read:org").
+  includeOrganizationRepos: true,
+  // Batasi ke organisasi tertentu (login organisasi, huruf kecil/besar bebas). Kosong = semua organisasi.
+  organizations: [],
   colors: {
     brand: "#CB2957",
     background: "#000000",
@@ -53,7 +59,7 @@ const formatNumber = (n) => {
 // ---------------------------------------------------------------- data -----
 
 const QUERY = `
-query ($login: String!, $after: String) {
+query ($login: String!, $after: String, $affiliations: [RepositoryAffiliation]) {
   user(login: $login) {
     contributionsCollection {
       totalCommitContributions
@@ -62,10 +68,11 @@ query ($login: String!, $after: String) {
     pullRequests { totalCount }
     issues { totalCount }
     repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, REPOSITORY]) { totalCount }
-    repositories(first: 100, after: $after, ownerAffiliations: OWNER, isFork: false) {
-      totalCount
+    owned: repositories(ownerAffiliations: OWNER, isFork: false) { totalCount }
+    repositories(first: 100, after: $after, ownerAffiliations: $affiliations, isFork: false) {
       pageInfo { hasNextPage endCursor }
       nodes {
+        owner { login }
         stargazerCount
         languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
           edges { size node { name } }
@@ -93,12 +100,18 @@ async function fetchStats(token, login) {
   let first = null;
   let stars = 0;
   const languageBytes = new Map();
+  const affiliations = CONFIG.includeOrganizationRepos ? ["OWNER", "ORGANIZATION_MEMBER", "COLLABORATOR"] : ["OWNER"];
+  const orgFilter = new Set(CONFIG.organizations.map((o) => o.toLowerCase()));
 
   for (let page = 0; page < 20; page++) {
-    const user = await graphql(token, { login, after });
+    const user = await graphql(token, { login, after, affiliations });
     first ??= user;
     for (const repo of user.repositories.nodes) {
-      stars += repo.stargazerCount;
+      const owner = repo.owner.login.toLowerCase();
+      const isOwn = owner === login.toLowerCase();
+      if (!isOwn && orgFilter.size && !orgFilter.has(owner)) continue;
+      // Bintang hanya dihitung dari repo milik sendiri
+      if (isOwn) stars += repo.stargazerCount;
       for (const { size, node } of repo.languages.edges) {
         languageBytes.set(node.name, (languageBytes.get(node.name) ?? 0) + size);
       }
@@ -112,7 +125,7 @@ async function fetchStats(token, login) {
     commits: c.totalCommitContributions + c.restrictedContributionsCount,
     pullRequests: first.pullRequests.totalCount,
     issues: first.issues.totalCount,
-    repositories: first.repositories.totalCount,
+    repositories: first.owned.totalCount,
     stars,
     contributedTo: first.repositoriesContributedTo.totalCount,
     languages: summarizeLanguages(languageBytes),
