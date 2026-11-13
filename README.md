@@ -65,7 +65,7 @@ Leading a team means owning more than the code, so I'm closing the gaps around i
 | **E-Commerce Platform** | Migrating a company storefront to Next.js |
 | **Document Automation** | Generating procurement documents automatically |
 | **Technician Ticketing** | Tracking service jobs for field technicians |
-| **Stock App** | Inventory tool integrated with accounting software |
+| **Inventory Operations App** | Stock count workflow and daily task tracking that feeds staff KPIs, built on Accurate Online ERP data via its API |
 | **Task Manager** | Internal task and workload tracking |
 
 ---
