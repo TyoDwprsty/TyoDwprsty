@@ -1,17 +1,26 @@
-<!-- [EDIT-1] HEADER: ubah nama di parameter text= (spasi ditulis %20) -->
+<!--
+  PANDUAN EDIT CEPAT
+  - Ganti "LINKEDIN_USERNAME" dengan username LinkedIn Anda.
+  - Teks banner (nama, jabatan, website) diubah di file assets/banner.svg, bagian [EDIT-1].
+  - Bagian lain diberi tanda [EDIT-x]. Cari tandanya, ubah isinya.
+  - Ikon ada di folder assets/icons (dari itshover.com). Untuk mengganti ikon, ubah nama file di src=.
+  - Kartu statistik dibuat otomatis oleh GitHub Actions; pengaturannya di scripts/generate-stats.mjs, bagian [EDIT-S].
+-->
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=180&section=header&text=Dwi%20Prasetyo&fontSize=56&fontColor=ffffff&fontAlignY=35" alt="Dwi Prasetyo" />
+  <img src="./assets/banner.svg" width="100%" alt="Dwi Prasetyo, AI-Driven Fullstack Engineer" />
 </p>
 
 <!-- [EDIT-2] TEKS BERJALAN: ubah parameter lines= ; pisahkan tiap kalimat dengan ";" dan spasi ditulis "+" -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&center=true&vCenter=true&width=640&lines=AI-Driven+Fullstack+Engineer;Lead+Software+Engineer+%40+HNS+IT+Center;Building+internal+systems+that+people+actually+use;Based+in+Batam%2C+Indonesia" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=CB2957&center=true&vCenter=true&width=640&lines=Lead+Software+Engineer+%40+HNS+IT+Center;Building+internal+systems+that+people+actually+use;Leveling+up+in+DevOps+and+test+automation;Open+to+opportunities+in+Europe" alt="Typing intro" />
 </p>
 
 <!-- [EDIT-3] TOMBOL KONTAK: ubah URL di href= -->
 <p align="center">
-  <a href="https://www.dprasetyo.com"><img src="https://img.shields.io/badge/Website-dprasetyo.com-3B82F6?style=for-the-badge" alt="Website" /></a>
-  <a href="https://www.linkedin.com/in/dwi-prasetyo-b0b416240"><img src="https://img.shields.io/badge/LinkedIn-Connect-3B82F6?style=for-the-badge" alt="LinkedIn" /></a>
+  <a href="https://www.dprasetyo.com"><img src="https://img.shields.io/badge/Website-dprasetyo.com-CB2957?style=for-the-badge&labelColor=000000" alt="Website" /></a>
+  <a href="https://www.linkedin.com/in/dwi-prasetyo-b0b416240"><img src="https://img.shields.io/badge/LinkedIn-Connect-CB2957?style=for-the-badge&labelColor=000000" alt="LinkedIn" /></a>
+  <a href="mailto:dwi@dprasetyo.com"><img src="https://img.shields.io/badge/Email-dwi%40dprasetyo.com-CB2957?style=for-the-badge&labelColor=000000" alt="Email" /></a>
 </p>
 
 ---
@@ -63,16 +72,25 @@ Leading a team means owning more than the code, so I'm closing the gaps around i
 
 <!-- [EDIT-8] IKON TEKNOLOGI: ubah daftar setelah i= (pisahkan dengan koma).
      Daftar nama ikon yang tersedia: https://skillicons.dev -->
-**Daily drivers**
+**Languages & frameworks**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,nodejs,html,css" alt="Main stack" />
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,nodejs,html,css" alt="Languages and frameworks" />
 </p>
 
-**Tools & infrastructure**
+**Cloud & infrastructure**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=docker,git,github,linux,nginx,vscode" alt="Tools" />
+  <img src="https://skillicons.dev/icons?i=docker,linux,nginx,cloudflare" alt="Cloud and infrastructure" />
+</p>
+
+<!-- [EDIT-8b] KETERANGAN LAYANAN CLOUD: tambahkan layanan yang tidak punya ikon di sini -->
+<sub>Cloudflare R2 for object storage, self-hosted VPS for deployment</sub>
+
+**Tools**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" alt="Tools" />
 </p>
 
 ---
@@ -102,27 +120,23 @@ I'm interested in working abroad, especially in **Europe**. If your team is buil
 
 ---
 
-## <img src="./assets/icons/gauge.svg" width="22" height="22" alt="" /> GitHub Stats
+## <img src="./assets/icons/chart-bar.svg" width="22" height="22" alt="" /> GitHub Stats
 
-<!-- [EDIT-12] TEMA STATISTIK: ubah theme= (contoh: tokyonight, dracula, radical, github_dark) -->
+<!-- Kartu ini dibuat ulang otomatis oleh GitHub Actions. Pengaturan judul, warna, dan bahasa yang disembunyikan ada di scripts/generate-stats.mjs bagian [EDIT-S] -->
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=TyoDwprsty&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TyoDwprsty&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=TyoDwprsty&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+  <img src="./assets/stats/stats.svg" width="49%" alt="GitHub activity" />
+  <img src="./assets/stats/languages.svg" width="49%" alt="Most used languages" />
 </p>
 
 ---
 
-<!-- [EDIT-13] PENUTUP: ubah kalimat penutup -->
+<!-- [EDIT-12] PENUTUP: ubah kalimat penutup -->
 <p align="center">
   <i>Open to collaboration and conversations about web engineering.</i>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer" alt="" />
+  <img src="./assets/footer.svg" width="100%" alt="" />
 </p>
 
 <p align="center">

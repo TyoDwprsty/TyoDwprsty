@@ -1,0 +1,52 @@
+name: Update stats cards
+
+on:
+  # Jalan otomatis 2x sehari (jam UTC)
+  schedule:
+    - cron: "17 */12 * * *"
+  # Bisa dijalankan manual dari tab Actions
+  workflow_dispatch:
+  # Jalan ulang saat script atau workflow diubah
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-cards
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate cards
+        run: node scripts/generate-stats.mjs
+        env:
+          # STATS_TOKEN (opsional) = Personal Access Token supaya commit di repo private ikut terhitung.
+          # Tanpa itu, workflow memakai token bawaan dan hanya membaca data publik.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats
+          if git diff --staged --quiet; then
+            echo "Stats unchanged"
+          else
+            git commit -m "chore: update stats cards"
+            git push
+          fi
