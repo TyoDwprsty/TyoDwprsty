@@ -60,6 +60,8 @@ Leading a team means owning more than the code, so I'm closing the gaps around i
 <!-- [EDIT-7] PROYEK: satu baris tabel = satu proyek. Format: | Nama | Deskripsi | -->
 | Project | What it does |
 | --- | --- |
+| **HRIS** _(in progress)_ | Human resources information system for internal teams |
+| **Auth (SSO)** | Single sign-on service for HNS IT Center; several internal websites already log in through it |
 | **E-Commerce Platform** | Migrating a company storefront to Next.js |
 | **Document Automation** | Generating procurement documents automatically |
 | **Technician Ticketing** | Tracking service jobs for field technicians |
@@ -85,7 +87,7 @@ Leading a team means owning more than the code, so I'm closing the gaps around i
 </p>
 
 <!-- [EDIT-8b] KETERANGAN LAYANAN CLOUD: tambahkan layanan yang tidak punya ikon di sini -->
-<sub>Cloudflare R2 for object storage, self-hosted VPS for deployment</sub>
+<sub>Dokploy on a self-hosted VPS for deployment, Cloudflare R2 for object storage</sub>
 
 **Tools**
 
@@ -140,5 +142,5 @@ I'm interested in working abroad, especially in **Europe**. If your team is buil
 </p>
 
 <p align="center">
-  <sub>Icons by <a href="https://www.itshover.com">Its Hover</a> (Apache-2.0)</sub>
+  <a href="https://www.itshover.com"><img src="https://img.shields.io/badge/Icons_by-Its_Hover_(Apache--2.0)-CB2957?style=flat-square&labelColor=000000" alt="Icons by Its Hover (Apache-2.0)" /></a>
 </p>
