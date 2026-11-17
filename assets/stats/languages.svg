@@ -16,16 +16,16 @@
     <text x="24" y="40" font-size="17" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">Most Used Languages</text>
     <rect x="24" y="52" width="40" height="2" fill="#CB2957"/>
     <defs><clipPath id="bar"><rect x="24" y="74" width="392" height="10" rx="5"/></clipPath></defs>
-    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="181.21" height="10" fill="#CB2957"/><rect x="205.21" y="74" width="133.47" height="10" fill="#E3557D"/><rect x="338.68" y="74" width="43.58" height="10" fill="#9E1F43"/><rect x="382.26" y="74" width="22.20" height="10" fill="#F08DAA"/><rect x="404.46" y="74" width="6.79" height="10" fill="#73152F"/><rect x="411.26" y="74" width="4.74" height="10" fill="#F8C2D2"/></g>
+    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="180.59" height="10" fill="#CB2957"/><rect x="204.59" y="74" width="134.36" height="10" fill="#E3557D"/><rect x="338.95" y="74" width="43.43" height="10" fill="#9E1F43"/><rect x="382.38" y="74" width="22.13" height="10" fill="#F08DAA"/><rect x="404.50" y="74" width="6.77" height="10" fill="#73152F"/><rect x="411.27" y="74" width="4.73" height="10" fill="#F8C2D2"/></g>
     <rect x="24" y="112" width="10" height="10" rx="2" fill="#CB2957"/>
     <text x="42" y="122" font-size="13" fill="#FFFFFF">HTML</text>
-    <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">44.8%</text>
+    <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">44.6%</text>
     <rect x="24" y="142" width="10" height="10" rx="2" fill="#E3557D"/>
     <text x="42" y="152" font-size="13" fill="#FFFFFF">TypeScript</text>
-    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">33.0%</text>
+    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">33.2%</text>
     <rect x="24" y="172" width="10" height="10" rx="2" fill="#9E1F43"/>
     <text x="42" y="182" font-size="13" fill="#FFFFFF">C</text>
-    <text x="208" y="182" font-size="13" fill="#BDBDBD" text-anchor="end">10.8%</text>
+    <text x="208" y="182" font-size="13" fill="#BDBDBD" text-anchor="end">10.7%</text>
     <rect x="232" y="112" width="10" height="10" rx="2" fill="#F08DAA"/>
     <text x="250" y="122" font-size="13" fill="#FFFFFF">Kotlin</text>
     <text x="416" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">5.5%</text>
