@@ -16,7 +16,7 @@
     <text x="24" y="40" font-size="17" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">Most Used Languages</text>
     <rect x="24" y="52" width="40" height="2" fill="#CB2957"/>
     <defs><clipPath id="bar"><rect x="24" y="74" width="392" height="10" rx="5"/></clipPath></defs>
-    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="178.76" height="10" fill="#CB2957"/><rect x="202.76" y="74" width="136.97" height="10" fill="#E3557D"/><rect x="339.73" y="74" width="42.99" height="10" fill="#9E1F43"/><rect x="382.72" y="74" width="21.90" height="10" fill="#F08DAA"/><rect x="404.62" y="74" width="6.70" height="10" fill="#73152F"/><rect x="411.32" y="74" width="4.68" height="10" fill="#F8C2D2"/></g>
+    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="178.75" height="10" fill="#CB2957"/><rect x="202.75" y="74" width="136.98" height="10" fill="#E3557D"/><rect x="339.73" y="74" width="42.99" height="10" fill="#9E1F43"/><rect x="382.72" y="74" width="21.90" height="10" fill="#F08DAA"/><rect x="404.62" y="74" width="6.70" height="10" fill="#73152F"/><rect x="411.32" y="74" width="4.68" height="10" fill="#F8C2D2"/></g>
     <rect x="24" y="112" width="10" height="10" rx="2" fill="#CB2957"/>
     <text x="42" y="122" font-size="13" fill="#FFFFFF">HTML</text>
     <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">44.2%</text>
