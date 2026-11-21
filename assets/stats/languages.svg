@@ -16,13 +16,13 @@
     <text x="24" y="40" font-size="17" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">Most Used Languages</text>
     <rect x="24" y="52" width="40" height="2" fill="#CB2957"/>
     <defs><clipPath id="bar"><rect x="24" y="74" width="392" height="10" rx="5"/></clipPath></defs>
-    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="178.18" height="10" fill="#CB2957"/><rect x="202.18" y="74" width="138.10" height="10" fill="#E3557D"/><rect x="340.28" y="74" width="42.85" height="10" fill="#9E1F43"/><rect x="383.12" y="74" width="21.83" height="10" fill="#F08DAA"/><rect x="404.96" y="74" width="6.68" height="10" fill="#73152F"/><rect x="411.64" y="74" width="4.36" height="10" fill="#F8C2D2"/></g>
+    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="177.98" height="10" fill="#CB2957"/><rect x="201.98" y="74" width="138.38" height="10" fill="#E3557D"/><rect x="340.36" y="74" width="42.80" height="10" fill="#9E1F43"/><rect x="383.16" y="74" width="21.81" height="10" fill="#F08DAA"/><rect x="404.97" y="74" width="6.67" height="10" fill="#73152F"/><rect x="411.64" y="74" width="4.36" height="10" fill="#F8C2D2"/></g>
     <rect x="24" y="112" width="10" height="10" rx="2" fill="#CB2957"/>
     <text x="42" y="122" font-size="13" fill="#FFFFFF">HTML</text>
     <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">44.0%</text>
     <rect x="24" y="142" width="10" height="10" rx="2" fill="#E3557D"/>
     <text x="42" y="152" font-size="13" fill="#FFFFFF">TypeScript</text>
-    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">34.1%</text>
+    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">34.2%</text>
     <rect x="24" y="172" width="10" height="10" rx="2" fill="#9E1F43"/>
     <text x="42" y="182" font-size="13" fill="#FFFFFF">C</text>
     <text x="208" y="182" font-size="13" fill="#BDBDBD" text-anchor="end">10.6%</text>
@@ -31,7 +31,7 @@
     <text x="416" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">5.4%</text>
     <rect x="232" y="142" width="10" height="10" rx="2" fill="#73152F"/>
     <text x="250" y="152" font-size="13" fill="#FFFFFF">RenderScript</text>
-    <text x="416" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">1.7%</text>
+    <text x="416" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">1.6%</text>
     <rect x="232" y="172" width="10" height="10" rx="2" fill="#F8C2D2"/>
     <text x="250" y="182" font-size="13" fill="#FFFFFF">JavaScript</text>
     <text x="416" y="182" font-size="13" fill="#BDBDBD" text-anchor="end">1.1%</text>
