@@ -16,13 +16,13 @@
     <text x="24" y="40" font-size="17" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">Most Used Languages</text>
     <rect x="24" y="52" width="40" height="2" fill="#CB2957"/>
     <defs><clipPath id="bar"><rect x="24" y="74" width="392" height="10" rx="5"/></clipPath></defs>
-    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="175.68" height="10" fill="#CB2957"/><rect x="199.68" y="74" width="141.66" height="10" fill="#E3557D"/><rect x="341.34" y="74" width="42.25" height="10" fill="#9E1F43"/><rect x="383.59" y="74" width="21.53" height="10" fill="#F08DAA"/><rect x="405.11" y="74" width="6.59" height="10" fill="#73152F"/><rect x="411.70" y="74" width="4.30" height="10" fill="#F8C2D2"/></g>
+    <g clip-path="url(#bar)"><rect x="24.00" y="74" width="175.36" height="10" fill="#CB2957"/><rect x="199.36" y="74" width="142.11" height="10" fill="#E3557D"/><rect x="341.47" y="74" width="42.17" height="10" fill="#9E1F43"/><rect x="383.64" y="74" width="21.49" height="10" fill="#F08DAA"/><rect x="405.13" y="74" width="6.57" height="10" fill="#73152F"/><rect x="411.70" y="74" width="4.30" height="10" fill="#F8C2D2"/></g>
     <rect x="24" y="112" width="10" height="10" rx="2" fill="#CB2957"/>
     <text x="42" y="122" font-size="13" fill="#FFFFFF">HTML</text>
-    <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">43.4%</text>
+    <text x="208" y="122" font-size="13" fill="#BDBDBD" text-anchor="end">43.3%</text>
     <rect x="24" y="142" width="10" height="10" rx="2" fill="#E3557D"/>
     <text x="42" y="152" font-size="13" fill="#FFFFFF">TypeScript</text>
-    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">35.0%</text>
+    <text x="208" y="152" font-size="13" fill="#BDBDBD" text-anchor="end">35.1%</text>
     <rect x="24" y="172" width="10" height="10" rx="2" fill="#9E1F43"/>
     <text x="42" y="182" font-size="13" fill="#FFFFFF">C</text>
     <text x="208" y="182" font-size="13" fill="#BDBDBD" text-anchor="end">10.4%</text>
