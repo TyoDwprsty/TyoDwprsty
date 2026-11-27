@@ -30,7 +30,7 @@
         <path d="m8 6-6 6 6 6" />
       </svg>
     <text x="50" y="86" font-size="13" fill="#BDBDBD">Commits (1y)</text>
-    <text x="208" y="86" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="end">375</text>
+    <text x="208" y="86" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="end">231</text>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         x="24" y="113" width="16"
@@ -143,6 +143,6 @@
         </g>
       </svg>
     <text x="258" y="166" font-size="13" fill="#BDBDBD">Contributed to</text>
-    <text x="416" y="166" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="end">6</text>
+    <text x="416" y="166" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="end">5</text>
   </g>
 </svg>
